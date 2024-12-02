@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groovvy - Stream Ads-less Music</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black text-white flex">
+    <section id="navigation"
+        class="z-50 w-0 md:w-[20%] transition-all duration-800 ease-in-out delay-75 h-screen bg-slate-900 fixed top-0 left-0 overflow-hidden">
+        <div class="flex flex-col mx-4 my-8 gap-7">
+
+            <div class="flex gap-2 font-bold text-2xl items-center">
+                <i class="ri-pulse-fill"></i>
+                <h1> Groovvy</h1>
+                <i id="close" class="ri-close-line md:hidden ml-4"></i>
+            </div>
+            <div class="menu w-full flex flex-col gap-4">
+                <h2 class="text-zinc-500 text-xl font-semibold">MENU</h2>
+                <div class="text-2xl font-bold flex flex-col gap-2">
+
+                    <h6 class="text-blue-500  font-black">Explore</h6>
+                    <h6 class="text-lg">Genres</h6>
+                    <h6 class="text-lg">Albums</h6>
+                    <h6 class="text-lg">Artists</h6>
+                    <h6 class="text-lg">Radio</h6>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <main class="w-full h-screen relative md:w-[80%] overflow-x-hidden  md:ml-[20%]">
+        <div class="header flex items-center justify-between  px-4 py-4  h-24 w-full">
+            <div class="flex gap-3 items-center ">
+                <i id="menu" class="ri-menu-2-fill font-semibold text-xl md:hidden"></i>
+                <h3 class="text-[#5773FF] font-semibold text-lg lg:text-xl">Music</h3>
+                <h3 class="font-semibold text-lg lg:text-xl">Podcast</h3>
+                <h3 class="font-semibold text-lg lg:text-xl">Live</h3>
+            </div>
+            <div id="inputBox"
+                class="hidden md:block px-2 bg-zinc-800 w-1/3 relative flex items-center justify-end rounded-md border-white h-[70%]">
+                <input type="text"
+                    class="w-full bg-transparent absolute top-0 left-0 w-full h-full  rounded-md px-2 text-sm py-1"
+                    placeholder="Search">
+                <i class="ri-search-2-line absolute right-2 top-3"></i>
+            </div>
+            <div class="flex gap-2  items-center">
+                <i class="ri-notification-3-fill text-lg lg:text-2xl"></i>
+                <i class="ri-settings-3-fill text-lg lg:text-2xl"></i>
+                <div>
+                    <div class="uerImg"></div>
+                </div>
+            </div>
+        </div>
+        <section class="w-[96%] m-2 px-2 py-6 h-52 flex flex-col justify-between bg-cover rounded-lg ">
+            <h2 class=" text-sm font-bold">Trending New Hits</h2>
+            <div>
+                <h1 class="text-5xl font-black mb-2">In My Feelings</h1>
+                <div class="flex items-center gap-4 text-sm text-zinc-500">
+                    <h4 class="font-semibold">Best PlayList On Groovvy..</h4>
+                    <h6 class="font-semibold text-sm">63 Million Plays</h6>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="mainBtn" class="bg-[#5773FF] py-2 px-4 rounded-full">Listen Now</button>
+                <div class="border-2 rounded-full w-10 flex items-center justify-center h-10"><i
+                        class="ri-heart-fill text-[#5773FF]"></i></div>
+            </div>
+        </section>
+        <section class="m-4 w-full ">
+            <h2 class="text-4xl font-bold mt-6">Top Songs</h2>
+            <div id="songsContainer" class=" w-full py-8 mb-14 flex flex-col gap-4">
+
+            </div>
+        </section>
+        <div id="controls" class="w-full md:w-[80%] lg:w-[78%]  bg-zinc-900 fixed bottom-0">
+            <div class="w-full h-full px-4 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+
+                    <div class="ImgContainer w-12 h-12 bg-zinc-700 rounded-lg overflow-hidden">
+                        <img id="songImg" src="./assets/download.jfif" alt="" class="w-full h-full">
+                    </div>
+                    <div class="my-3">
+                        <h1 class="font-bold text-2xl" id="songTitle"> Song </h1>
+                        <p class="font-semibold" id="songArtist">artists</p>
+                    </div>
+                </div>
+                <div id="control" class=" flex items-center gap-2 p-3 rounded-lg text-2xl">
+                    <h3 id="back">
+
+                        <i class="ri-skip-back-fill pointer-events-none "></i>
+                    </h3>
+                    <h3 id="play" class="text-4xl">
+
+                        <i class=" ri-play-line pointer-events-none"></i>
+                    </h3>
+                    <h3 id="forward">
+
+                        <i class="ri-skip-forward-fill pointer-events-none"></i>
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

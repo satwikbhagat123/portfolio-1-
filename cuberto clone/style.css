@@ -1,0 +1,374 @@
+*{
+           box-sizing:border-box;
+           margin: 0;
+           font-family: Averta CY W10;
+           padding: 0;
+}
+
+html,body{
+      width: 100%;
+      height: 100%;
+      display: block;
+      justify-content: center;
+      align-items: center;
+}
+
+#main{
+    width: 100%;
+    background-color: #fff;
+}
+
+#home{
+    width: 100%;
+    min-width: 100vh;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+}
+
+#nav img{
+    width: 100px;
+}
+
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nav a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1vw;
+    color: black;
+    letter-spacing: -1px;
+}
+
+#nav i{
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+#home #homemain{
+    width: 100%;
+    padding: 13vw 15vw;
+}
+#homemain h1{
+    font-weight: 500px;
+    font-size: 1.34vw;
+    letter-spacing: -.1vw;
+}
+
+.headings {
+    display: flex;
+    gap: 40px;
+}
+
+#homemain .headings h1{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    font-size: 7vw;
+    font-weight: 900;
+    letter-spacing: -5px;
+    line-height: 1;
+}
+
+#homemain.headings h1:hover{
+    color: black;
+}
+
+#homelast{
+    padding: 0vw 15vw;
+}
+
+#homelast p{
+    width: 70%;
+    font-size: 1.6vw;
+    font-weight: 500;
+    letter-spacing: .08vw;
+}
+
+*::selection{
+    color: #fff;
+    background-color: black;
+    
+}
+
+#homelast p::selection{
+    color: #fff;
+    background-color: black;
+    
+}
+
+#featured{
+    padding: 10vw 15vw;
+    position: relative; 
+    background-color: #F6F5F2;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+
+.fheading>h1{
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.fheading>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+#fimages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.scrollable {
+    height: 100vh; /* Full height for each section */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 50%; /* Each takes half the width */
+
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+
+#fleft{
+    overflow: hidden;
+    width: 45%;
+    height:inherit ;
+}
+
+.fleftelem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.fleftelem h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+
+}
+
+.fleftelem h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.fleftelem h4{
+    opacity: .5;
+}
+
+#fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height:inherit ;
+}
+
+#fright .images{
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
+
+#fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; /* Higher than footer */
+}
+
+.btndiv button{
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid #e6e6e6;
+    background-color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+    background-color: #c1f88a;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1;
+}
+
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide {
+    width: 30%;
+}
+
+.slide .img{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: yellow; */
+}
+
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide .tag{
+    width: fit-content;
+    border-radius: 100px;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+    margin: 20px 0;
+}
+
+.slide h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
+
+
+
+
+.cursor{
+    z-index: 999;
+    position: fixed;
+    width: 20px; 
+    background: black;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px black,
+                0 0 60px black,
+                0 0 100px black;  
+    animation: color 5s infinite;
+}
+
+
+.cursor:before{
+    content: "";
+    position: absolute;
+    transform: translate(-30%, -30%);
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    opacity: 0.2;
+    
+}
+
+
+
+#brandingVideo {
+    position: absolute; /* Position it absolutely */
+    top: 60%; /* Center it vertically */
+    left: 77%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set the same height to make it circular */
+    border-radius: 50%; /* Make it circular */
+    display: none; /* Hide initially */
+    z-index: 0; /* Behind the heading */
+    object-fit: cover; /* Ensures the video covers the circular area */
+}
+
+#appsVideo {
+    position: absolute; /* Position it absolutely */
+    top: 60%; /* Center it vertically */
+    left: 52%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set the same height to make it circular */
+    border-radius: 50%; /* Make it circular */
+    display: none; /*Hide initially */
+    z-index: 0; /* Behind the heading */
+    object-fit: cover; /* Ensures the video covers the circular area */
+}
+#websitesVideo {
+    position: absolute; /* Position it absolutely */
+    top: 60%; /* Center it vertically */
+    left: 30%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set the same height to make it circular */
+    border-radius: 50%; /* Make it circular */
+    display: none; /*Hide initially */
+    z-index: 0; /* Behind the heading */
+    object-fit: cover; /* Ensures the video covers the circular area */
+}
+
+
+.headings {
+    position: relative; /* Make the headings a positioned element */
+    z-index: 1; /* Ensure it appears above the video */
+}
+
+
+
+/* Footer styling */
+#footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#footer.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+

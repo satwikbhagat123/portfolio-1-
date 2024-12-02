@@ -1,0 +1,81 @@
+:root{
+    --salmon: #EF9D71;
+    --black: #000;
+    --cyan: #AEDEE0;
+    --white: #fff;
+    --dsalmon: rgb(83, 37, 33);
+    --dcyan: #1f2f32;
+}
+
+@font-face {
+    font-family: '659dbdfd5a080be8d348316e_PP Neue Machina Inktrap Medium';
+    src: url('./fonts/659dbdfd5a080be8d348316e_PP\ Neue\ Machina\ Inktrap\ Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    font-family: '659dbdfd5a080be8d348316e_PP Neue Machina Inktrap Medium', sans-serif;
+  }
+  
+  
+body{
+    transition: background-color ease-out .5s;
+}
+.vdodiv {
+    clip-path: circle(var(--clip, 100%) at 50% 50%);
+}
+
+
+
+*::selection{
+    background-color: var(--salmon);
+}
+body[theme="black"]{
+    background-color: var(--black);
+}
+
+
+body[theme="black"] .section{
+   color: var(--white);
+}
+
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+
+body[theme="salmon"] .section{
+    color: var(--dsalmon);
+}
+
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+
+body[theme="white"] .section{
+    color: var(--black);
+}
+
+
+
+#footer{
+    background-color: #f5f19c;
+    color: black;
+
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3.19rem;
+    padding-right: 3.19rem;
+}
